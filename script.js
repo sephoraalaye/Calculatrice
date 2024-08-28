@@ -1,11 +1,38 @@
 
+var ecran = document.getElementsByClassName("afficheur")[0];
+var a = 0,b = 0,c = 0,resultat = 0,op = "";
 
-var boutons = document.getElementsByTagName("button");
-
-for (i=0; i<boutons.length;i++) {
-        var id =  boutons[i].id;
-        boutons[i].onclick = function(){
-        document.getElementsByClassName('afficheur')[0].textContent = id;
-        }
-
+function saveValue(bouton){
+    a += bouton.id;
+    ecran.textContent += bouton.id;
+    
 }
+
+function saveOperation(operation){
+    ecran.textContent += operation.id;
+    b= parseInt(a);
+    op = operation.id;
+    a=""; 
+}
+
+function egal(){
+    c= parseInt(a);
+    switch(op) {
+        case "+" : 
+            resultat = b + c;
+            break;
+        case "-" : 
+            resultat = b - c;
+            break;
+        case "x" : 
+            resultat = b * c;
+            break;
+        case "/" : 
+            resultat = b / c;
+            break;
+    }
+    ecran.textContent = resultat; 
+    
+}
+
+

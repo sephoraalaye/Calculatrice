@@ -13,21 +13,21 @@
     
     </div>
     <div class="touches">
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="x">x</button>
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button>
-        <button id="-">-</button>
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
-        <button id="+" style=" position:relative;  height: 206px;" >+</button>
-        <button id="." style="margin-top: -112px;"> .</button>
-        <button id="0" style="margin-top: -112px;">0</button>
-        <button id="=" style="margin-top: -112px;">=</button>
+        <button id="1" onclick="saveValue(this)">1</button>
+        <button id="2" onclick="saveValue(this)">2</button>
+        <button id="3" onclick="saveValue(this)">3</button>
+        <button id="x" onclick="saveOperation(this)">x</button>
+        <button id="4" onclick="saveValue(this)">4</button>
+        <button id="5" onclick="saveValue(this)">5</button>
+        <button id="6" onclick="saveValue(this)">6</button>
+        <button id="-" onclick="saveOperation(this)">-</button>
+        <button id="7" onclick="saveValue(this)">7</button>
+        <button id="8" onclick="saveValue(this)">8</button>
+        <button id="9" onclick="saveValue(this)">9</button>
+        <button id="+" onclick="saveOperation(this)" style=" position:relative;  height: 206px;" >+</button>
+        <button id="/" onclick="saveOperation(this)" style="margin-top: -112px;">/</button>
+        <button id="0" onclick="saveValue(this)" style="margin-top: -112px;">0</button>
+        <button id="=" onclick="egal()" style="margin-top: -112px;">=</button>
         
     </div>
    </div>
